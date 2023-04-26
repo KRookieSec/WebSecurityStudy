@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "7d2d0ee6b8689c1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "a11e0f1d159e17c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5285754e3d2a852c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6x20漏洞挖掘——src漏洞挖掘思路.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c4ee33a731f54e0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6x21漏洞挖掘——src漏洞挖掘信息收集.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9bfe68ea8a44a046",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6x22漏洞挖掘——弱口令.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d86d1b93c232a185",
+    "type": "split",
+    "children": [
+      {
+        "id": "7641f7a10793f7dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c40a07f42c4bbe96",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "913492cdf69f2953",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9ae68d1e4d25810a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ee4251909cd82776",
+    "type": "split",
+    "children": [
+      {
+        "id": "0aebd59e41e992df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "66b10c8ffbd64ca3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "6x22漏洞挖掘——弱口令.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "42df90364e6e754d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "6x22漏洞挖掘——弱口令.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ae021af981e6f68e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fcf489eba8a15aa3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "6x22漏洞挖掘——弱口令.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "9bfe68ea8a44a046",
+  "lastOpenFiles": [
+    "6x21漏洞挖掘——src漏洞挖掘信息收集.md",
+    "6x22漏洞挖掘——弱口令.md",
+    "6x20漏洞挖掘——src漏洞挖掘思路.md",
+    "4x06内网安全——隧道技术建立与文件传输.md",
+    "5x01PHP代码审计——SQL注入.md",
+    "4x07内网安全——流量隧道不出网与端口转发.md",
+    "6x02Python脚本——主机发现与端口扫描.md",
+    "6x01漏洞挖掘与渗透测试技巧.md",
+    "5x03PHP代码审计——thinkphp反序列化文件删除.md",
+    "6x05Python脚本——FofaApi查询脚本.md"
+  ]
+}
