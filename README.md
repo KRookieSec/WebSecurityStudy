@@ -45,7 +45,10 @@
 		- [6x02Python脚本——主机发现与端口扫描](6x02Python脚本——主机发现与端口扫描.md)
 		- [6x03Python脚本——netcat工具](6x03Python脚本——netcat工具.md)
 		- [6x04Python脚本——TCP与UDP客户端服务端](6x04Python脚本——TCP与UDP客户端服务端.md)
-   		- [6x05Python脚本——FofaApi查询脚本](6x05Python脚本——FofaApi查询脚本.md)
+		- [6x05Python脚本——FofaApi查询脚本](6x05Python脚本——FofaApi查询脚本.md)
+		- [6x20漏洞挖掘——src漏洞挖掘思路](./6x20漏洞挖掘——src漏洞挖掘思路.md)
+		- [6x21漏洞挖掘——src漏洞挖掘信息收集](./6x21漏洞挖掘——src漏洞挖掘信息收集.md)
+		- [6x22漏洞挖掘——弱口令](./6x22漏洞挖掘——弱口令.md)
 	- 靶场过关记录
 		- [7x01靶场练习——红队实战靶场ATT&CK（一）](7x01靶场练习——红队实战靶场ATT&CK（一）.md)
 		- [7x02靶场练习——红队实战靶场ATT&CK（二）](7x02靶场练习——红队实战靶场ATT&CK（二）.md)
