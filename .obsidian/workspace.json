@@ -42,9 +42,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "182b882f56a676bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6x23漏洞挖掘——条件竞争（并发）.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6c9aef1276e18325",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6x24漏洞挖掘——越权.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "6x24漏洞挖掘——越权.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "6x24漏洞挖掘——越权.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "6x24漏洞挖掘——越权.md"
               }
             }
           }
@@ -171,10 +195,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "9bfe68ea8a44a046",
+  "active": "6c9aef1276e18325",
   "lastOpenFiles": [
-    "6x22漏洞挖掘——弱口令.md",
+    "6x23漏洞挖掘——条件竞争（并发）.md",
+    "6x24漏洞挖掘——越权.md",
     "6x21漏洞挖掘——src漏洞挖掘信息收集.md",
+    "README.md",
+    "6x22漏洞挖掘——弱口令.md",
     "6x20漏洞挖掘——src漏洞挖掘思路.md",
     "4x06内网安全——隧道技术建立与文件传输.md",
     "5x01PHP代码审计——SQL注入.md",
