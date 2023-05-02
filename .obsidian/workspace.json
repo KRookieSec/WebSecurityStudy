@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5285754e3d2a852c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6x20漏洞挖掘——src漏洞挖掘思路.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c4ee33a731f54e0d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6x21漏洞挖掘——src漏洞挖掘信息收集.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "9bfe68ea8a44a046",
             "type": "leaf",
             "state": {
@@ -44,31 +20,18 @@
             }
           },
           {
-            "id": "182b882f56a676bb",
+            "id": "55224d42afa254a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6x23漏洞挖掘——条件竞争（并发）.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6c9aef1276e18325",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6x24漏洞挖掘——越权.md",
+                "file": "1x05漏洞原理——SQL注入之堆叠注入.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6x24漏洞挖掘——越权.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6x24漏洞挖掘——越权.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6x24漏洞挖掘——越权.md"
+                "file": "README.md"
               }
             }
           }
@@ -195,8 +158,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6c9aef1276e18325",
+  "active": "9bfe68ea8a44a046",
   "lastOpenFiles": [
+    "1x05漏洞原理——SQL注入之堆叠注入.md",
+    "1x04漏洞原理——SQL注入之延时盲注.md",
+    "img/SQLi/stack/9.png",
+    "img/SQLi/stack/8.png",
+    "img/SQLi/stack/7.png",
+    "img/SQLi/stack/6.png",
+    "img/SQLi/stack/5.png",
+    "img/SQLi/stack/4.png",
+    "img/SQLi/stack/2.png",
+    "img/SQLi/stack/3.png",
+    "img/SQLi/stack/1.png",
+    "img/SQLi/stack",
     "README.md",
     "6x24漏洞挖掘——越权.md",
     "6x23漏洞挖掘——条件竞争（并发）.md",
