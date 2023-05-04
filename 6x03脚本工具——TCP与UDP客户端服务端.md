@@ -1,4 +1,4 @@
-# Python脚本——TCP与UDP客户端服务端
+# 脚本工具——TCP与UDP客户端服务端
 
 # TCP客户端
 

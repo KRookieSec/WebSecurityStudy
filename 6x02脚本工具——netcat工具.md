@@ -1,4 +1,4 @@
-# Python脚本——netcat工具
+# 脚本工具——netcat工具
 
 1. 导入Python库并创建execute函数，该函数会接受一条命令并执行
 

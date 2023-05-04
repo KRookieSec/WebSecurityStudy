@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "2d62f1dbfe80ad65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "8x01靶场练习——红队实战靶场ATT&CK（一）.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "55224d42afa254a0",
             "type": "leaf",
             "state": {
@@ -76,12 +88,20 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "62061bdc103692c9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 367.5
   },
   "right": {
     "id": "ee4251909cd82776",
@@ -160,8 +180,32 @@
   },
   "active": "9bfe68ea8a44a046",
   "lastOpenFiles": [
-    "1x05漏洞原理——SQL注入之堆叠注入.md",
-    "1x04漏洞原理——SQL注入之延时盲注.md",
+    "8x01靶场练习——红队实战靶场ATT&CK（一）.md",
+    "README.md",
+    "5x04代码审计——PHP审计之YCCMS审计.md",
+    "5x03代码审计——PHP审计之thinkphp反序列化文件删除.md",
+    "5x01代码审计——PHP审计之SQL注入.md",
+    "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md",
+    "7x06漏洞挖掘——越权.md",
+    "7x05漏洞挖掘——条件竞争（并发）.md",
+    "7x04漏洞挖掘——弱口令.md",
+    "7x03漏洞挖掘——src漏洞挖掘信息收集.md",
+    "7x02漏洞挖掘——src漏洞挖掘思路.md",
+    "6x04脚本工具——FofaApi查询脚本.md",
+    "6x03脚本工具——TCP与UDP客户端服务端.md",
+    "6x02脚本工具——netcat工具.md",
+    "6x01脚本工具——主机发现与端口扫描.md",
+    "7x01漏洞挖掘与渗透测试技巧.md",
+    "8x18HTB系列——【Base】目录遍历与认证绕过.md",
+    "8x17HTB系列——【Markup】XXE注入.md",
+    "8x16HTB系列——【Included】文件包含漏洞.md",
+    "8x15HTB系列——【Unified】UniFiCMS_Log4j远程代码执行.md",
+    "8x14HTB系列——【Vaccine】.md",
+    "8x13HTB系列——【Three】aws_s3子域名接管漏洞.md",
+    "8x12HTB系列——funnel.md",
+    "8x11HTB系列——rsync未授权访问.md",
+    "8x10HTB系列——MongoDB.md",
+    "8x09HTB系列——Redis.md",
     "img/SQLi/stack/9.png",
     "img/SQLi/stack/8.png",
     "img/SQLi/stack/7.png",
@@ -171,19 +215,6 @@
     "img/SQLi/stack/2.png",
     "img/SQLi/stack/3.png",
     "img/SQLi/stack/1.png",
-    "img/SQLi/stack",
-    "README.md",
-    "6x24漏洞挖掘——越权.md",
-    "6x23漏洞挖掘——条件竞争（并发）.md",
-    "6x21漏洞挖掘——src漏洞挖掘信息收集.md",
-    "6x22漏洞挖掘——弱口令.md",
-    "6x20漏洞挖掘——src漏洞挖掘思路.md",
-    "4x06内网安全——隧道技术建立与文件传输.md",
-    "5x01PHP代码审计——SQL注入.md",
-    "4x07内网安全——流量隧道不出网与端口转发.md",
-    "6x02Python脚本——主机发现与端口扫描.md",
-    "6x01漏洞挖掘与渗透测试技巧.md",
-    "5x03PHP代码审计——thinkphp反序列化文件删除.md",
-    "6x05Python脚本——FofaApi查询脚本.md"
+    "img/SQLi/stack"
   ]
 }
