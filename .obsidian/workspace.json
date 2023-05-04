@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9bfe68ea8a44a046",
+            "id": "4e9cbad0a80f4a9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2d62f1dbfe80ad65",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "8x01靶场练习——红队实战靶场ATT&CK（一）.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "55224d42afa254a0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1x05漏洞原理——SQL注入之堆叠注入.md",
+                "file": "1x06漏洞原理——XSS之反射型XSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "1x06漏洞原理——XSS之反射型XSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "1x06漏洞原理——XSS之反射型XSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "1x06漏洞原理——XSS之反射型XSS.md"
               }
             }
           }
@@ -178,10 +154,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "9bfe68ea8a44a046",
+  "active": "4e9cbad0a80f4a9f",
   "lastOpenFiles": [
-    "8x01靶场练习——红队实战靶场ATT&CK（一）.md",
     "README.md",
+    "1x06漏洞原理——XSS之反射型XSS.md",
+    "img/XSS/ReflectedXSS/2.png",
+    "img/XSS/ReflectedXSS/1.png",
+    "img/XSS/ReflectedXSS",
+    "img/XSS",
+    "1x05漏洞原理——SQL注入之堆叠注入.md",
+    "8x01靶场练习——红队实战靶场ATT&CK（一）.md",
     "5x04代码审计——PHP审计之YCCMS审计.md",
     "5x03代码审计——PHP审计之thinkphp反序列化文件删除.md",
     "5x01代码审计——PHP审计之SQL注入.md",
@@ -203,9 +185,6 @@
     "8x14HTB系列——【Vaccine】.md",
     "8x13HTB系列——【Three】aws_s3子域名接管漏洞.md",
     "8x12HTB系列——funnel.md",
-    "8x11HTB系列——rsync未授权访问.md",
-    "8x10HTB系列——MongoDB.md",
-    "8x09HTB系列——Redis.md",
     "img/SQLi/stack/9.png",
     "img/SQLi/stack/8.png",
     "img/SQLi/stack/7.png",
@@ -214,7 +193,6 @@
     "img/SQLi/stack/4.png",
     "img/SQLi/stack/2.png",
     "img/SQLi/stack/3.png",
-    "img/SQLi/stack/1.png",
     "img/SQLi/stack"
   ]
 }
