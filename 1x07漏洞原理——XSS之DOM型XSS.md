@@ -35,7 +35,7 @@ WebGoat/start.mvc#lesson/CrossSiteScripting.lesson/9
 ```
 7. 从该页面的URL分析，网站是MVC设计模式的，`start.mvc#`为路由入口，后面接参数和路由，这样的话，漏洞函数的利用链如下，最终造成漏洞的lessonContentView.showTestParam()方法是由GoatRouter.testRoute()最初调用的，那么只要将XSS代码插入到test参数后面即可
 ```
-GoatRouter.testRoute()——>lessonController.testHandler()——>lessonContentView.showTestParam()——>
+GoatRouter.testRoute()——>lessonController.testHandler()——>lessonContentView.showTestParam()
 ```
 8. 由此构造payload如下
 ```
