@@ -41,5 +41,5 @@ GoatRouter.testRoute()——>lessonController.testHandler()——>lessonContentV
 ```
 start.mvc#test/<img src='' onerror="alert(document.cookie)">
 ```
-9. 浏览器访问payload，页面弹窗，成功获取到payload
+9. 浏览器访问payload，页面弹窗，成功获取到cookie
 	![6.png](./img/XSS/DOMXSS/6.png)
