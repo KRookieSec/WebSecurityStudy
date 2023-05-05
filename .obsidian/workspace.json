@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "1x07漏洞原理——XSS之DOM型XSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1x07漏洞原理——XSS之DOM型XSS.md",
+                "file": "1x06漏洞原理——XSS之反射型XSS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -167,8 +166,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8f04fdf70fab15cb",
+  "active": "4e9cbad0a80f4a9f",
   "lastOpenFiles": [
+    "README.md",
     "1x06漏洞原理——XSS之反射型XSS.md",
     "1x07漏洞原理——XSS之DOM型XSS.md",
     "img/XSS/DOMXSS/6.png",
@@ -178,7 +178,6 @@
     "img/XSS/DOMXSS/2.png",
     "img/XSS/DOMXSS/1.png",
     "img/XSS/DOMXSS",
-    "README.md",
     "img/XSS/ReflectedXSS/2.png",
     "img/XSS/ReflectedXSS/1.png",
     "img/XSS/ReflectedXSS",

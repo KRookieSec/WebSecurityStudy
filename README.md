@@ -10,6 +10,7 @@
 		- [1x04漏洞原理——SQL注入之延时盲注](1x04漏洞原理——SQL注入之延时盲注.md)
 		- [1x05漏洞原理——SQL注入之堆叠注入](1x05漏洞原理——SQL注入之堆叠注入.md)
 		- [1x06漏洞原理——XSS之反射型XSS](1x06漏洞原理——XSS之反射型XSS.md)
+		- [1x07漏洞原理——XSS之DOM型XSS](1x07漏洞原理——XSS之DOM型XSS.md)
    - 漏洞复现
 		- [2x01漏洞复现——Apache_Log4j2_lookup_JNDI_注入漏洞（CVE-2021-44228）](2x01漏洞复现——Apache_Log4j2_lookup_JNDI_注入漏洞（CVE-2021-44228）.md)
 		- [2x02漏洞复现——Apache_Shiro_认证绕过漏洞CVE-2020-1957](2x02漏洞复现——Apache_Shiro_认证绕过漏洞CVE-2020-1957.md)
