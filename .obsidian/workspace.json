@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4e9cbad0a80f4a9f",
+            "id": "5c829383b777635f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1x07漏洞原理——XSS之DOM型XSS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8f04fdf70fab15cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1x06漏洞原理——XSS之反射型XSS.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1x07漏洞原理——XSS之DOM型XSS.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1x07漏洞原理——XSS之DOM型XSS.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1x07漏洞原理——XSS之DOM型XSS.md"
+                "file": "README.md"
               }
             }
           }
@@ -166,11 +154,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4e9cbad0a80f4a9f",
+  "active": "5c829383b777635f",
   "lastOpenFiles": [
+    "1x08漏洞原理——XSS之存储型XSS.md",
+    "1x07漏洞原理——XSS之DOM型XSS.md",
     "README.md",
     "1x06漏洞原理——XSS之反射型XSS.md",
-    "1x07漏洞原理——XSS之DOM型XSS.md",
     "img/XSS/DOMXSS/6.png",
     "img/XSS/DOMXSS/5.png",
     "img/XSS/DOMXSS/4.png",
