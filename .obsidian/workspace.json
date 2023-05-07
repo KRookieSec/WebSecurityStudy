@@ -18,6 +18,30 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "435cd9265776b4ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1x12漏洞原理——文件上传之白名单绕过.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a5611df5fb7b6f11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1x11漏洞原理——文件上传之黑名单绕过.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -156,19 +180,33 @@
   },
   "active": "5c829383b777635f",
   "lastOpenFiles": [
+    "1x12漏洞原理——文件上传之白名单绕过.md",
+    "img/upload/white/4.png",
+    "img/upload/white/3.png",
+    "img/upload/white/2.png",
+    "img/upload/white/1.png",
+    "img/upload/white/截图_2023-05-07_17-35-04.png",
+    "img/upload/white",
+    "README.md",
+    "1x11漏洞原理——文件上传之黑名单绕过.md",
+    "img/upload/black/2.png",
+    "img/upload/black/1.png",
+    "img/upload/black",
+    "1x10漏洞原理——文件上传之MIME绕过.md",
+    "img/upload/mime/2.png",
+    "1x09漏洞原理——文件上传之js校验绕过.md",
+    "img/upload/js/3.png",
+    "img/upload/js/2.png",
+    "img/upload/js",
+    "img/upload/mime",
+    "img/upload",
+    "img/upload-labs",
+    "1x02漏洞原理——SQL注入之报错注入.md",
+    "1x01漏洞原理——SQL注入基础.md",
     "1x08漏洞原理——XSS之存储型XSS.md",
     "1x07漏洞原理——XSS之DOM型XSS.md",
-    "README.md",
     "1x06漏洞原理——XSS之反射型XSS.md",
-    "img/XSS/DOMXSS/6.png",
-    "img/XSS/DOMXSS/5.png",
-    "img/XSS/DOMXSS/4.png",
-    "img/XSS/DOMXSS/3.png",
-    "img/XSS/DOMXSS/2.png",
-    "img/XSS/DOMXSS/1.png",
     "img/XSS/DOMXSS",
-    "img/XSS/ReflectedXSS/2.png",
-    "img/XSS/ReflectedXSS/1.png",
     "img/XSS/ReflectedXSS",
     "img/XSS",
     "1x05漏洞原理——SQL注入之堆叠注入.md",
@@ -186,15 +224,6 @@
     "6x03脚本工具——TCP与UDP客户端服务端.md",
     "6x02脚本工具——netcat工具.md",
     "6x01脚本工具——主机发现与端口扫描.md",
-    "7x01漏洞挖掘与渗透测试技巧.md",
-    "8x18HTB系列——【Base】目录遍历与认证绕过.md",
-    "8x17HTB系列——【Markup】XXE注入.md",
-    "8x16HTB系列——【Included】文件包含漏洞.md",
-    "8x15HTB系列——【Unified】UniFiCMS_Log4j远程代码执行.md",
-    "8x14HTB系列——【Vaccine】.md",
-    "8x13HTB系列——【Three】aws_s3子域名接管漏洞.md",
-    "img/SQLi/stack/9.png",
-    "img/SQLi/stack/8.png",
     "img/SQLi/stack"
   ]
 }
