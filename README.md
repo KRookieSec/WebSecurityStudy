@@ -77,7 +77,7 @@
 		- [8x11HTB系列——rsync未授权访问](8x11HTB系列——rsync未授权访问.md)
 		- [8x12HTB系列——funnel](8x12HTB系列——funnel.md)
 		- [8x13HTB系列——【Three】aws_s3子域名接管漏洞](8x13HTB系列——【Three】aws_s3子域名接管漏洞.md)
-		- [8x14HTB系列——【Vaccine】](8x14HTB系列——【Vaccine】.md)
+		- [8x14HTB系列——【Vaccine】](8x14HTB系列——【Vaccine】.md)并发
 		- [8x15HTB系列——【Unified】UniFiCMS_Log4j远程代码执行](8x15HTB系列——【Unified】UniFiCMS_Log4j远程代码执行.md)
 		- [8x16HTB系列——【Included】文件包含漏洞](8x16HTB系列——【Included】文件包含漏洞.md)
 		- [8x17HTB系列——【Markup】XXE注入](8x17HTB系列——【Markup】XXE注入.md)

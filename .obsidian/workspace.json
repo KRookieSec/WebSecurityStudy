@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md"
               }
             }
           }
@@ -156,9 +156,9 @@
   },
   "active": "77087d8aa4739225",
   "lastOpenFiles": [
+    "README.md",
     "1x18漏洞原理——逻辑越权.md",
     "1x17漏洞原理——条件竞争（并发）.md",
-    "README.md",
     "7x06漏洞挖掘——越权.md",
     "7x05漏洞挖掘——条件竞争（并发）.md",
     "1x16漏洞原理——弱口令.md",
