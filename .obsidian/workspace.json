@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md",
+                "file": "1x18漏洞原理——逻辑越权.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eb8246dd1f42cde9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1x19漏洞原理——未授权访问.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md",
+                "file": "1x19漏洞原理——未授权访问.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md",
+                "file": "1x19漏洞原理——未授权访问.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md"
+                "file": "1x19漏洞原理——未授权访问.md"
               }
             }
           }
@@ -154,10 +167,24 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "77087d8aa4739225",
+  "active": "eb8246dd1f42cde9",
   "lastOpenFiles": [
-    "README.md",
+    "img/AccessControl_unprotected/3.png",
+    "img/AccessControl_unprotected/2.png",
+    "img/AccessControl_unprotected/1.png",
+    "img/AccessControl_unprotected",
     "1x18漏洞原理——逻辑越权.md",
+    "1x19漏洞原理——未授权访问.md",
+    "1x10漏洞原理——文件上传之MIME绕过.md",
+    "img/AccessControl_user_parameter/6.png",
+    "img/AccessControl_user_parameter/5.png",
+    "img/AccessControl_user_parameter/4.png",
+    "img/AccessControl_user_parameter/3.png",
+    "img/AccessControl_user_parameter/2.png",
+    "img/AccessControl_user_parameter/1.png",
+    "img/AccessControl_user_parameter",
+    "README.md",
+    "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md",
     "1x17漏洞原理——条件竞争（并发）.md",
     "7x06漏洞挖掘——越权.md",
     "7x05漏洞挖掘——条件竞争（并发）.md",
@@ -168,20 +195,11 @@
     "1x14漏洞原理——SSRF服务器端请求伪造.md",
     "img/ssrf/7.png",
     "img/ssrf/6.png",
-    "img/ssrf/5.png",
-    "img/ssrf/4.png",
-    "img/ssrf/3.png",
-    "img/ssrf/2.png",
-    "img/ssrf/1.png",
     "img/ssrf",
     "1x13漏洞原理——CSRF客户端请求伪造.md",
-    "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md",
     "1x09漏洞原理——文件上传之js校验绕过.md",
     "1x07漏洞原理——XSS跨站脚本攻击之DOM型XSS.md",
     "1x06漏洞原理——XSS跨站脚本攻击之反射型XSS.md",
-    "img/csrf/4.png",
-    "img/csrf/3.png",
-    "img/csrf/2.png",
     "img/csrf",
     "img/cors",
     "img/XSS/Stored",
@@ -189,18 +207,13 @@
     "1x12漏洞原理——文件上传之白名单绕过.md",
     "img/upload/white",
     "img/upload/black",
-    "1x10漏洞原理——文件上传之MIME绕过.md",
     "img/upload/js",
     "img/upload/mime",
-    "img/upload",
-    "img/upload-labs",
     "1x02漏洞原理——SQL注入之报错注入.md",
     "1x01漏洞原理——SQL注入基础.md",
     "1x05漏洞原理——SQL注入之堆叠注入.md",
     "8x01靶场练习——红队实战靶场ATT&CK（一）.md",
     "5x04代码审计——PHP审计之YCCMS审计.md",
-    "5x03代码审计——PHP审计之thinkphp反序列化文件删除.md",
-    "5x01代码审计——PHP审计之SQL注入.md",
-    "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md"
+    "5x03代码审计——PHP审计之thinkphp反序列化文件删除.md"
   ]
 }
