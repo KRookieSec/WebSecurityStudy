@@ -20,31 +20,19 @@
             }
           },
           {
-            "id": "f8d4e74dc4d39337",
+            "id": "68a53065029d8007",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1x21漏洞原理——XML外部实体注入（XXE）.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5aa2b420c61b31cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1x21漏洞原理——XML外部实体注入（XXE）.md",
+                "file": "1x24漏洞原理——JWT注入.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1x21漏洞原理——XML外部实体注入（XXE）.md",
+                "file": "1x24漏洞原理——JWT注入.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1x21漏洞原理——XML外部实体注入（XXE）.md",
+                "file": "1x24漏洞原理——JWT注入.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1x21漏洞原理——XML外部实体注入（XXE）.md"
+                "file": "1x24漏洞原理——JWT注入.md"
               }
             }
           }
@@ -179,11 +167,27 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5aa2b420c61b31cb",
+  "active": "68a53065029d8007",
   "lastOpenFiles": [
     "README.md",
+    "1x24漏洞原理——JWT注入.md",
+    "img/JWT/6.png",
+    "img/JWT/5.png",
+    "img/JWT/4.png",
+    "img/JWT/3.png",
+    "img/JWT/2.png",
+    "img/JWT/1.png",
+    "img/JWT",
+    "img/新建文件夹",
+    "1x22漏洞原理——HTTP请求走私.md",
+    "1x23漏洞原理——目录遍历.md",
+    "img/file_path_traversal/2.png",
+    "img/file_path_traversal/1.png",
+    "img/file_path_traversal",
+    "img/HTTP_request_smuggling/3.png",
+    "img/HTTP_request_smuggling/2.png",
+    "img/HTTP_request_smuggling",
     "1x21漏洞原理——XML外部实体注入（XXE）.md",
-    "img/XXE/4.png",
     "1x20漏洞原理——IDOR不安全的对象直接引用.md",
     "1x19漏洞原理——未授权访问.md",
     "1x18漏洞原理——逻辑越权.md",
@@ -192,16 +196,7 @@
     "1x14漏洞原理——SSRF服务器端请求伪造.md",
     "1x16漏洞原理——弱口令.md",
     "1x17漏洞原理——条件竞争（并发）.md",
-    "img/XXE/3.png",
-    "img/XXE/2.png",
-    "img/XXE/1.png",
     "img/XXE",
-    "img/IDOR/6.png",
-    "img/IDOR/5.png",
-    "img/IDOR/4.png",
-    "img/IDOR/3.png",
-    "img/IDOR/2.png",
-    "img/IDOR/1.png",
     "img/IDOR",
     "img/AccessControl_unprotected",
     "1x10漏洞原理——文件上传之MIME绕过.md",
@@ -216,15 +211,8 @@
     "1x07漏洞原理——XSS跨站脚本攻击之DOM型XSS.md",
     "1x06漏洞原理——XSS跨站脚本攻击之反射型XSS.md",
     "img/csrf",
-    "img/cors",
-    "img/XSS/Stored",
     "1x11漏洞原理——文件上传之黑名单绕过.md",
     "1x12漏洞原理——文件上传之白名单绕过.md",
-    "img/upload/white",
-    "img/upload/black",
-    "1x02漏洞原理——SQL注入之报错注入.md",
-    "1x01漏洞原理——SQL注入基础.md",
-    "1x05漏洞原理——SQL注入之堆叠注入.md",
-    "8x01靶场练习——红队实战靶场ATT&CK（一）.md"
+    "1x02漏洞原理——SQL注入之报错注入.md"
   ]
 }
