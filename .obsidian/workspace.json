@@ -20,31 +20,19 @@
             }
           },
           {
-            "id": "68a53065029d8007",
+            "id": "f5d651ee9fc31579",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1x24漏洞原理——JWT注入.md",
+                "file": "1x27漏洞原理——不安全的反序列化.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4324a18efb4c6f6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1x25漏洞原理——SSTI服务器端模板注入.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6d7fedd0d36b16e1",
+            "id": "5aa2b420c61b31cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -192,29 +180,30 @@
   },
   "active": "eb8246dd1f42cde9",
   "lastOpenFiles": [
-    "1x26漏洞原理——RCE命令执行与代码执行.md",
+    "1x27漏洞原理——不安全的反序列化.md",
+    "img/deserialization/5.png",
+    "img/deserialization/4.png",
+    "img/deserialization/3.png",
+    "img/deserialization/2.png",
+    "img/deserialization/1.png",
+    "img/deserialization",
     "README.md",
-    "img/RCE/3.png",
-    "img/RCE/2.png",
-    "img/RCE/1.png",
-    "img/RCE",
-    "img/新建文件夹",
-    "1x25漏洞原理——SSTI服务器端模板注入.md",
+    "1x26漏洞原理——RCE命令执行与代码执行.md",
+    "1x21漏洞原理——XML外部实体注入（XXE）.md",
+    "img/file_path_traversal/2.png",
+    "img/file_path_traversal/1.png",
+    "img/file_path_traversal",
     "img/SSTI/7.png",
     "img/SSTI/6.png",
     "img/SSTI/5.png",
-    "img/SSTI/4.png",
-    "img/SSTI/3.png",
-    "img/SSTI/2.png",
-    "img/SSTI/1.png",
     "img/SSTI",
-    "1x24漏洞原理——JWT注入.md",
+    "img/RCE",
     "img/JWT",
-    "1x22漏洞原理——HTTP请求走私.md",
-    "1x23漏洞原理——目录遍历.md",
-    "img/file_path_traversal",
     "img/HTTP_request_smuggling",
-    "1x21漏洞原理——XML外部实体注入（XXE）.md",
+    "1x25漏洞原理——SSTI服务器端模板注入.md",
+    "1x24漏洞原理——JWT注入.md",
+    "1x23漏洞原理——目录遍历.md",
+    "1x22漏洞原理——HTTP请求走私.md",
     "1x20漏洞原理——IDOR不安全的对象直接引用.md",
     "1x19漏洞原理——未授权访问.md",
     "1x18漏洞原理——逻辑越权.md",
@@ -235,7 +224,6 @@
     "7x07漏洞挖掘——cors跨域资源共享.md",
     "1x09漏洞原理——文件上传之js校验绕过.md",
     "1x07漏洞原理——XSS跨站脚本攻击之DOM型XSS.md",
-    "1x06漏洞原理——XSS跨站脚本攻击之反射型XSS.md",
-    "1x11漏洞原理——文件上传之黑名单绕过.md"
+    "1x06漏洞原理——XSS跨站脚本攻击之反射型XSS.md"
   ]
 }
