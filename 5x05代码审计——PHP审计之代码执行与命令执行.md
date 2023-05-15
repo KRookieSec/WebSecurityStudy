@@ -320,6 +320,7 @@
 	http://localhost/index.php?mod=site&act=manager&do=store&op=display&beid=1
 	```
 	- 查看源码目录如下图所示，则源码的功能类文件都在system和includes目录下，进行代码审计时只需要重点关注system和includes目录下的文件即可，尤其是system目录
+
 ![2.png](./img/PHPCode/baijiacms/2.png)
 ## （二）漏洞审计
 ### 代码执行
