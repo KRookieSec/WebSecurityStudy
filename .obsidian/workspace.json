@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md"
+                "file": "README.md"
               }
             }
           }
@@ -191,8 +190,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e51a7e749e2da59c",
+  "active": "eb8246dd1f42cde9",
   "lastOpenFiles": [
+    "5x05代码审计——PHP审计之代码执行与命令执行.md",
     "img/PHPCode/baijiacms/5.png",
     "img/PHPCode/baijiacms/4.png",
     "img/PHPCode/baijiacms/3.png",
@@ -201,7 +201,6 @@
     "img/PHPCode/baijiacms",
     "img/PHPCode/新建文件夹",
     "README.md",
-    "5x05代码审计——PHP审计之代码执行与命令执行.md",
     "1x27漏洞原理——不安全的反序列化.md",
     "img/deserialization/5.png",
     "img/deserialization/4.png",
@@ -211,7 +210,6 @@
     "img/deserialization",
     "1x26漏洞原理——RCE命令执行与代码执行.md",
     "1x21漏洞原理——XML外部实体注入（XXE）.md",
-    "img/file_path_traversal/2.png",
     "img/file_path_traversal",
     "img/SSTI",
     "img/RCE",
