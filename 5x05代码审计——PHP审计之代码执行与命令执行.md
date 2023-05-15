@@ -388,5 +388,6 @@ function file_save($file_tmp_name,$filename,$extention,$file_full_path,$file_rel
 }
 ```
 3. 如上所示，可以看到函数中只对上传文件的保存进行了操作，没有发现对文件名、文件路径的合法性进行校验的相关方法，可知此处并没有对上传文件的文件名、路径进行过滤，那么文件名、路径是可控的，查询该方法被哪些文件调用了，如下，file_save()函数被/system/weixin/class/web/setting.php文件调用了，正好是seay源码审计系统自动审计中报告的最后一个漏洞所在的文件，此处传入了变量文件名
+
 ![5.png](./img/PHPCode/baijiacms/5.png)
 4. 
