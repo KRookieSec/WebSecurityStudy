@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "e51a7e749e2da59c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "f5d651ee9fc31579",
             "type": "leaf",
             "state": {
@@ -43,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -117,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md"
               }
             }
           }
@@ -178,8 +191,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "eb8246dd1f42cde9",
+  "active": "e51a7e749e2da59c",
   "lastOpenFiles": [
+    "img/PHPCode/baijiacms/5.png",
+    "img/PHPCode/baijiacms/4.png",
+    "img/PHPCode/baijiacms/3.png",
+    "img/PHPCode/baijiacms/2.png",
+    "img/PHPCode/baijiacms/1.png",
+    "img/PHPCode/baijiacms",
+    "img/PHPCode/新建文件夹",
+    "README.md",
+    "5x05代码审计——PHP审计之代码执行与命令执行.md",
     "1x27漏洞原理——不安全的反序列化.md",
     "img/deserialization/5.png",
     "img/deserialization/4.png",
@@ -187,15 +209,10 @@
     "img/deserialization/2.png",
     "img/deserialization/1.png",
     "img/deserialization",
-    "README.md",
     "1x26漏洞原理——RCE命令执行与代码执行.md",
     "1x21漏洞原理——XML外部实体注入（XXE）.md",
     "img/file_path_traversal/2.png",
-    "img/file_path_traversal/1.png",
     "img/file_path_traversal",
-    "img/SSTI/7.png",
-    "img/SSTI/6.png",
-    "img/SSTI/5.png",
     "img/SSTI",
     "img/RCE",
     "img/JWT",
@@ -214,16 +231,13 @@
     "1x17漏洞原理——条件竞争（并发）.md",
     "img/XXE",
     "img/IDOR",
-    "img/AccessControl_unprotected",
     "1x10漏洞原理——文件上传之MIME绕过.md",
-    "img/AccessControl_user_parameter",
     "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md",
     "7x06漏洞挖掘——越权.md",
     "7x05漏洞挖掘——条件竞争（并发）.md",
     "7x04漏洞挖掘——弱口令.md",
     "7x07漏洞挖掘——cors跨域资源共享.md",
     "1x09漏洞原理——文件上传之js校验绕过.md",
-    "1x07漏洞原理——XSS跨站脚本攻击之DOM型XSS.md",
-    "1x06漏洞原理——XSS跨站脚本攻击之反射型XSS.md"
+    "1x07漏洞原理——XSS跨站脚本攻击之DOM型XSS.md"
   ]
 }
