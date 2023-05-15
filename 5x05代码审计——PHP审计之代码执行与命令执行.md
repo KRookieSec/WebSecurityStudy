@@ -316,9 +316,9 @@
 2. 使用phpstudy在本地用源码搭建web网站，配置好数据库、管理员用户后使用管理员登陆后台添加一个店铺，如下
 ![1.png](./img/PHPCode/baijiacms/1.png)
 3. 可以看到网站的后台路径为如下格式，可知该源码为MVC设计模式的
-	```HTTP
+	```
 	http://localhost/index.php?mod=site&act=manager&do=store&op=display&beid=1
-```
+	```
 	- 查看源码目录如下图所示，则源码的功能类文件都在system和includes目录下，进行代码审计时只需要重点关注system和includes目录下的文件即可，尤其是system目录
 ![2.png](./img/PHPCode/baijiacms/2.png)
 ## （二）漏洞审计
