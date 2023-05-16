@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md",
+                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md",
+                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md",
+                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md"
+                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md"
               }
             }
           }
@@ -193,7 +193,11 @@
   },
   "active": "e51a7e749e2da59c",
   "lastOpenFiles": [
+    "5x04代码审计——PHP审计之YCCMS审计.md",
     "5x05代码审计——PHP审计之代码执行与命令执行.md",
+    "5x03代码审计——PHP审计之thinkphp反序列化文件删除.md",
+    "5x01代码审计——PHP审计之SQL注入.md",
+    "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md",
     "img/PHPCode/baijiacms/9.png",
     "img/PHPCode/baijiacms/8.png",
     "img/PHPCode/baijiacms/7.png",
@@ -234,9 +238,6 @@
     "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md",
     "7x06漏洞挖掘——越权.md",
     "7x05漏洞挖掘——条件竞争（并发）.md",
-    "7x04漏洞挖掘——弱口令.md",
-    "7x07漏洞挖掘——cors跨域资源共享.md",
-    "1x09漏洞原理——文件上传之js校验绕过.md",
-    "1x07漏洞原理——XSS跨站脚本攻击之DOM型XSS.md"
+    "7x04漏洞挖掘——弱口令.md"
   ]
 }
