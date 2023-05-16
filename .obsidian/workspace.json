@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md",
+                "file": "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md",
+                "file": "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md",
+                "file": "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5x05代码审计——PHP审计之代码执行与命令执行.md"
+                "file": "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md"
               }
             }
           }
@@ -193,8 +193,12 @@
   },
   "active": "e51a7e749e2da59c",
   "lastOpenFiles": [
-    "README.md",
     "5x05代码审计——PHP审计之代码执行与命令执行.md",
+    "img/PHPCode/baijiacms/9.png",
+    "img/PHPCode/baijiacms/8.png",
+    "img/PHPCode/baijiacms/7.png",
+    "img/PHPCode/baijiacms/6.png",
+    "README.md",
     "img/PHPCode/baijiacms/5.png",
     "img/PHPCode/baijiacms/4.png",
     "img/PHPCode/baijiacms/3.png",
@@ -204,10 +208,6 @@
     "img/PHPCode/新建文件夹",
     "1x27漏洞原理——不安全的反序列化.md",
     "img/deserialization/5.png",
-    "img/deserialization/4.png",
-    "img/deserialization/3.png",
-    "img/deserialization/2.png",
-    "img/deserialization/1.png",
     "img/deserialization",
     "1x26漏洞原理——RCE命令执行与代码执行.md",
     "1x21漏洞原理——XML外部实体注入（XXE）.md",

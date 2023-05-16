@@ -314,20 +314,18 @@
 	- vscode
 	- phpstudy
 2. 使用phpstudy在本地用源码搭建web网站，配置好数据库、管理员用户后使用管理员登陆后台添加一个店铺，如下
-![1.png](./img/PHPCode/baijiacms/1.png)
-3. 可以看到网站的后台路径为如下格式，可知该源码为MVC设计模式的
+	![1.png](./img/PHPCode/baijiacms/1.png)
+1. 可以看到网站的后台路径为如下格式，可知该源码为MVC设计模式的
 	```
 	http://localhost/index.php?mod=site&act=manager&do=store&op=display&beid=1
 	```
 	- 查看源码目录如下图所示，则源码的功能类文件都在system和includes目录下，进行代码审计时只需要重点关注system和includes目录下的文件即可，尤其是system目录
-
-![2.png](./img/PHPCode/baijiacms/2.png)
-## （二）漏洞审计
-### 代码执行
+	![2.png](./img/PHPCode/baijiacms/2.png)
+## （二）代码执行漏洞审计
 1. 先使用seay源码审计系统进行自动审计，观察审计结果中system目录下有哪些文件存在代码执行或命令执行的敏感函数，如下
-![3.png](./img/PHPCode/baijiacms/3.png)
-![4.png](./img/PHPCode/baijiacms/4.png)
-2. 发现/includes/baijiacms/common.inc.php文件中存在system()函数，函数中传入了变量文件路径，而在自动审计的最后一个漏洞所在文件/system/weixin/class/web/setting.php中则刚好传入了一个文件作为变量，我们先来看一下这个地方。转到/includes/baijiacms/common.inc.php文件的file_save()函数，源码如下
+	![3.png](./img/PHPCode/baijiacms/3.png)
+	![4.png](./img/PHPCode/baijiacms/4.png)
+1. 发现/includes/baijiacms/common.inc.php文件中存在system()函数，函数中传入了变量文件路径，而在自动审计的最后一个漏洞所在文件/system/weixin/class/web/setting.php中则刚好传入了一个文件作为变量，我们先来看一下这个地方。转到/includes/baijiacms/common.inc.php文件的file_save()函数，源码如下
 ```PHP
 function file_save($file_tmp_name,$filename,$extention,$file_full_path,$file_relative_path,$allownet=true)
 {
@@ -389,5 +387,68 @@ function file_save($file_tmp_name,$filename,$extention,$file_full_path,$file_rel
 ```
 3. 如上所示，可以看到函数中只对上传文件的保存进行了操作，没有发现对文件名、文件路径的合法性进行校验的相关方法，可知此处并没有对上传文件的文件名、路径进行过滤，那么文件名、路径是可控的，查询该方法被哪些文件调用了，如下，file_save()函数被/system/weixin/class/web/setting.php文件调用了，正好是seay源码审计系统自动审计中报告的最后一个漏洞所在的文件，此处传入了变量文件名
 
-![5.png](./img/PHPCode/baijiacms/5.png)
-4. 
+	![5.png](./img/PHPCode/baijiacms/5.png)
+1. 转到/system/weixin/class/web/setting.php文件查看源码，如下，可以看到代码中通过pathinfo获取扩展上传文件的文件名，也没有对文件名进行过滤，直接将上传文件的文件名拼接到了网站根目录下，这样导致文件名和路径都可以被用户操控
+```PHP
+$settings=globalSetting('weixin');
+
+		
+ if (checksubmit()) {
+            $cfg = array(
+               'weixinname' => $_GP['weixinname'],
+                'weixintoken' => trim($_GP['weixintoken']),
+                'EncodingAESKey' => trim($_GP['EncodingAESKey']),
+						  	'weixin_appId' => trim($_GP['weixin_appId']),
+				   		  'weixin_appSecret' => trim($_GP['weixin_appSecret']),
+				   		  'weixin_shareaddress'=> intval($_GP['weixin_shareaddress']),
+				   		  'weixin_noaccess'=> intval($_GP['weixin_noaccess'])
+            );
+    
+        if (!empty($_FILES['weixin_verify_file']['tmp_name'])) {
+            $file=$_FILES['weixin_verify_file'];
+     
+	$extention = pathinfo($file['name'], PATHINFO_EXTENSION);
+		$extention=strtolower($extention);
+  	if($extention=='txt')
+  	{
+  		       $substr=substr($_SERVER['PHP_SELF'], 0, strrpos($_SERVER['PHP_SELF'], '/'));
+  		       if(empty( $substr))
+  		       {
+  		        $substr="/";	
+  		       }
+           $verify_root= substr(WEB_ROOT."/",0, strrpos(WEB_ROOT."/", $substr))."/";
+
+  		//file_save($file['tmp_name'],$file['name'],$extention,$verify_root.$file['name'],$verify_root.$file['name'],false);
+  		  		file_save($file['tmp_name'],$file['name'],$extention,WEB_ROOT."/".$file['name'],WEB_ROOT."/".$file['name'],false);
+  		  		
+  		  		if($verify_root!=WEB_ROOT."/")
+  		  		{
+  		  			copy(WEB_ROOT."/".$file['name'],$verify_root."/".$file['name']);
+  		  		}
+  		  		
+  		 $cfg['weixin_hasverify']=$file['name'];
+  	}else
+  	{
+  	message("不允许上传除txt结尾以外的文件");	
+  	}
+      }
+     
+          
+         $cfg['weixin_access_token']="";
+         
+          refreshSetting($cfg,'weixin');
+            message('保存成功', 'refresh', 'success');
+        }
+        if(empty($settings['weixintoken']))
+        {
+        $isfirst=true;	
+        }
+
+			include page('setting');
+```
+5. 先在附件设置中将图片压缩开启
+	![6.png](./img/PHPCode/baijiacms/6.png)
+6. 然后进入店铺管理——>微信号设置，可以看到此功能处有一处上传，我们在本地新建一个文件，命名为&whoami&.txt，然后上传
+	![7.png](./img/PHPCode/baijiacms/7.png)
+7. 如下，成功执行命令并获取到系统用户名
+	![8.png](./img/PHPCode/baijiacms/8.png)
