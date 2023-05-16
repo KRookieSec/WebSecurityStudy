@@ -92,6 +92,7 @@
 	 //其它操作...
 	```
 	- 需要注意的是：在绑定 Socket 地址时，需要根据协议类型（AF_INET 或 AF_INET6）指定相应的地址类型，否则可能会出现 Socket 绑定失败的问题；在绑定端口时，如果指定了远程主机的 IP 地址，那么在绑定端口时也应该考虑防火墙等因素及时封锁端口。
+
 5. **curl_init()**。初始化一个 cURL 对象，用于发送 HTTP 请求。
 	- 语法
 	```PHP
@@ -115,6 +116,7 @@
 		 - 通过 `curl_exec()` 函数执行cURL会话，发送HTTP请求并返回响应内容。 
 		 - 执行完cURL会话后，应该通过 `curl_close()` 函数关闭cURL会话，释放资源。 
 		 - 如果需要同时发送多个HTTP请求，则应该为每个请求创建一个独立的cURL对象并执行相应的操作。
+
 6. **curl_setopt()**。设置 cURL 传输选项，如 URL、请求头、请求方式、认证信息等。
 	- 语法
 	```PHP
@@ -144,6 +146,7 @@
 	- 注意事项：
 		- 在使用 `curl_setopt()` 函数设置选项时，必须在 `curl_init()` 函数执行后、 `curl_exec()` 函数执行前设置。 
 		- 可以设置的选项较多，包括请求方式、请求头、代理、超时时间、Cookies等。
+
 7. **curl_exec()**。执行 cURL 会话，发送 HTTP 请求并返回响应内容。
 	- 语法
 	```PHP
@@ -173,6 +176,7 @@
 	- 注意事项：
 		- 在使用 `curl_exec()` 函数执行HTTP请求时，必须先使用 `curl_setopt()` 函数设置请求选项，否则会出现错误。 
 		- `curl_exec()` 函数返回的是HTTP响应结果，响应结果的格式包括HTML、XML、JSON等格式，需要根据具体情况进行处理。
+
 8. **curl_close()**。关闭 cURL 会话，释放资源。
 	- 语法
 	```PHP
@@ -200,6 +204,7 @@
 	echo $result;
 	```
 	- 注意事项： 在使用 `curl_close()` 函数关闭cURL会话句柄之前，必须先通过 `curl_exec()` 函数执行完HTTP请求并获取响应结果。
+
 9. **fopen()** 和 **fread()**。打开并读取文件或 URL 内容，具体使用方式与读取本地文件相同。具体参考[5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入](5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md)
 10. **stream_context_create()**。创建并返回一个新的上下文流，用于网络请求。 
 	- 语法
@@ -231,6 +236,7 @@
 	- 注意事项： 
 		- `stream_context_create()` 函数可以设置HTTP请求头、代理、超时时间等参数，可以根据具体需求设置参数。 
 		- 可以通过 `file_get_contents()` 等函数将请求结果读取到变量中。
+
 11. **stream_context_get_params()**。设置上下文流的参数。 
 	- 语法
 	```PHP
@@ -254,6 +260,7 @@
 	//获取流上下文参数
 	var_dump(stream_context_get_params($context));
 	```
+
 12. **stream_socket_client()**。打开一个套接字连接，与 fsockopen() 相似。
 	- 语法
 	```PHP
