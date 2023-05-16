@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5x06代码审计——PHP审计之SSRF.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5x06代码审计——PHP审计之SSRF.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5x06代码审计——PHP审计之SSRF.md"
+                "file": "README.md"
               }
             }
           }
@@ -179,8 +178,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c536c3cfc95bcfec",
+  "active": "eb8246dd1f42cde9",
   "lastOpenFiles": [
+    "5x06代码审计——PHP审计之SSRF.md",
     "img/PHPCode/taocms/9.png",
     "img/PHPCode/taocms/7.png",
     "img/PHPCode/taocms/8.png",
@@ -193,13 +193,11 @@
     "img/PHPCode/taocms",
     "img/PHPCode/新建文件夹",
     "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md",
-    "5x06代码审计——PHP审计之SSRF.md",
     "5x05代码审计——PHP审计之代码执行与命令执行.md",
     "5x01代码审计——PHP审计之SQL注入.md",
     "5x04代码审计——PHP审计之YCCMS审计.md",
     "5x03代码审计——PHP审计之thinkphp反序列化文件删除.md",
     "img/PHPCode/baijiacms/9.png",
-    "img/PHPCode/baijiacms/8.png",
     "README.md",
     "img/PHPCode/baijiacms",
     "1x27漏洞原理——不安全的反序列化.md",
