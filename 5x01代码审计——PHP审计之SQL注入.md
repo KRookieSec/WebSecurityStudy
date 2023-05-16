@@ -9,7 +9,7 @@
 ![4.png](img/PHPCode/SQLInjection/4.png)
 
 # 二、PHP中的数据库操作函数
-1. mysqli_connect()：用于连接MySQL数据库。 
+1. **mysqli_connect()**：用于连接MySQL数据库。 
 	- 语法
 	```PHP
 	mysqli_connect(servername, username, password, dbname, port, socket)
@@ -33,7 +33,7 @@
 	    die("连接失败：" . mysqli_connect_error());
 	}
 	```
-2. mysqli_query()：用于执行SQL查询语句，查询语句可以是SELECT、INSERT、UPDATE、DELETE等类型。 
+2. **mysqli_query()**：用于执行SQL查询语句，查询语句可以是SELECT、INSERT、UPDATE、DELETE等类型。 
 	- 语法
 	```PHP
 	mysqli_query(connection, query, resultmode)
@@ -65,7 +65,7 @@
 	    echo $row['name']." ".$row['age']."<br>";
 	}
 	```
-3. mysqli_fetch_array()：用于获取查询结果。 
+3. **mysqli_fetch_array()**：用于获取查询结果。 
 	- 语法
 	```PHP
 	mysqli_fetch_array(result, resulttype)
@@ -84,7 +84,7 @@
 	    echo $row['name']." ".$row['age']."<br>";
 	}
 	```
-4. mysqli_real_escape_string()：用于转义查询语句中的特殊字符，以防止SQL注入攻击。 
+4. **mysqli_real_escape_string()**：用于转义查询语句中的特殊字符，以防止SQL注入攻击。 
 	- 语法
 	```PHP
 	mysqli_real_escape_string(connection,escapestring)
@@ -103,7 +103,7 @@
 	$sql="INSERT INTO my_table (name) VALUES ('$str')";
 	$result=mysqli_query($conn,$sql);
 	```
-5. mysqli_prepare()：用于准备预处理语句，以防止SQL注入攻击。 
+5. **mysqli_prepare()**：用于准备预处理语句，以防止SQL注入攻击。 
 	- 语法
 	```PHP
 	mysqli_prepare(connection,query)
@@ -123,7 +123,7 @@
 	$age=25;
 	mysqli_stmt_execute($stmt);
 	```
-6. mysqli_bind_param()：用于绑定参数，以防止SQL注入攻击，PHP中用于为预处理语句绑定参数的函数，它可以将PHP变量和MySQL参数进行绑定，将预处理语句中的占位符替换成具体的值。
+6. **mysqli_bind_param()**：用于绑定参数，以防止SQL注入攻击，PHP中用于为预处理语句绑定参数的函数，它可以将PHP变量和MySQL参数进行绑定，将预处理语句中的占位符替换成具体的值。
 	- 语法
 	```PHP
 	mysqli_stmt_bind_param(stmt,types,param1,param2,...)
@@ -148,7 +148,7 @@
 	$age=25;
 	mysqli_stmt_execute($stmt);
 	```
-7. mysqli_stmt_execute()：PHP中用于执行预处理语句的函数，它可以执行由 `mysqli_prepare()` 函数准备的预处理语句。 
+7. **mysqli_stmt_execute()**：PHP中用于执行预处理语句的函数，它可以执行由 `mysqli_prepare()` 函数准备的预处理语句。 
 	- 语法
 	```PHP
 	mysqli_stmt_execute(stmt)
@@ -167,8 +167,8 @@
 	$age=25;
 	mysqli_stmt_execute($stmt);
 	```
-8. mysqli_close()：用于关闭与数据库的连接。
-9. mysql_query()：用于执行MySQL查询语句。已经过时被弃用。 
+8. **mysqli_close()**：用于关闭与数据库的连接。
+9. **mysql_query()**：用于执行MySQL查询语句。已经过时被弃用。 
 	- 语法
 	```PHP
 	mysql_query(query,result)
@@ -189,7 +189,7 @@
 	    echo $row['name']." ".$row['age'];
 	}
 	```
-10. mysql_db_query()：用于执行MySQL查询语句。已经过时被弃用。 
+10. **mysql_db_query()**：用于执行MySQL查询语句。已经过时被弃用。 
 	- 语法
 	```PHP
 	mysql_db_query(database,query,result)
@@ -211,7 +211,7 @@
 	    echo $row['name']." ".$row['age'];
 	}
 	```
-11. mysql_connect()：用于连接MySQL数据库。已经过时被弃用。 
+11. **mysql_connect()**：用于连接MySQL数据库。已经过时被弃用。 
 	- 语法
 	```PHP
 	mysql_connect(servername,username,password,new_link,client_flag)
@@ -235,7 +235,7 @@
 	echo "Connected successfully";
 	mysql_close($conn);
 	```
-12. mysql_pconnect()：用于创建持久化MySQL连接。已经过时被弃用。与 `mysql_connect()` 函数不同的是， `mysql_pconnect()` 函数打开一个到MySQL服务器的持久连接，如果该连接已经存在，则使用该连接。这个函数已经被废弃，在PHP7.0.0版本中被删除，建议使用 `mysqli` 或 `PDO` 扩展
+12. **mysql_pconnect()**：用于创建持久化MySQL连接。已经过时被弃用。与 `mysql_connect()` 函数不同的是， `mysql_pconnect()` 函数打开一个到MySQL服务器的持久连接，如果该连接已经存在，则使用该连接。这个函数已经被废弃，在PHP7.0.0版本中被删除，建议使用 `mysqli` 或 `PDO` 扩展
 	- 语法
 	```PHP
 	mysql_pconnect(servername,username,password,client_flag)
@@ -258,7 +258,7 @@
 	echo "Connected successfully";
 	mysql_close($conn);
 	```
-13. mysql_unbuffered_query()：用于执行MySQL查询语句，并将结果集存储在服务器上。已经过时被弃用。用于执行非缓存的MySQL查询的函数，它与 `mysql_query()` 函数的主要区别在于查询结果不会被缓存到PHP内存中，而是直接从MySQL服务器流式传输。这个函数已经被废弃，在PHP7.0.0版本中被删除
+13. **mysql_unbuffered_query()**：用于执行MySQL查询语句，并将结果集存储在服务器上。已经过时被弃用。用于执行非缓存的MySQL查询的函数，它与 `mysql_query()` 函数的主要区别在于查询结果不会被缓存到PHP内存中，而是直接从MySQL服务器流式传输。这个函数已经被废弃，在PHP7.0.0版本中被删除
 	- 语法
 	```PHP
 	mysql_unbuffered_query(query,connection)

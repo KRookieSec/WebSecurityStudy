@@ -31,7 +31,7 @@
 	    echo "读取文件失败！";
 	}
 	```
-2. fclose() - 关闭文件 
+2. **fclose()** - 关闭文件 
 3. **fread()**。fread()函数是PHP中一个常用的文件操作函数，它用于读取文件的内容。该函数可以读取指定长度的文件内容，并将读取的内容返回到一个字符串中。 函数语法：
 	```PHP
 	string fread ( resource $handle , int $length )
