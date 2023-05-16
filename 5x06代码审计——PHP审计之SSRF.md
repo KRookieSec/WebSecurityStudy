@@ -290,5 +290,107 @@
 	- $flags 参数常用的有 STREAM_CLIENT_CONNECT ，表示使用TCP协议进行连接，可以与 STREAM_CLIENT_ASYNC_CONNECT 和 STREAM_CLIENT_PERSISTENT 组合使用。 
 	- 如果需要设置流上下文参数，可以使用 stream_context_create() 函数创建流上下文资源对象，并将其作为 $context 参数传递给 stream_socket_client() 函数。
 	```
+
 # 二、SSRF代码审计案例——TaoCMS 3.0.2
-1. 
+## （一）环境配置
+1. 工具及环境如下
+	- PHP 5.6
+	- MySQL
+	- phpstudy
+	- vscode
+	- seay源码审计系统
+2. 使用phpstudy搭建网站后后访问网站URL会自动跳转到安装目录，按提示配置好数据库跳转到如下界面
+	![1.png](./img/PHPCode/taocms/1.png)
+2. 使用默认口令admin/tao进入管理后台，发现后台URL路由如下，可知该CMS是MVC设计模式的
+	```
+	http://localhost:8088/admin/admin.php?action=frame&ctrl=iframes
+	```
+	![2.png](./img/PHPCode/taocms/2.png)
+3. 查看网站目录如下，可知网站功能点的文件所在目录为include/Model，进行审计时只需重点关注该目录下的文件即可
+	![3.png](./img/PHPCode/taocms/3.png)
+## （二）SSRF漏洞审计
+1. 先使用seay源码审计系统扫描一遍源码，查看扫描报告，发现报告的第37个漏洞/include/Model/Spider.php文件，存在敏感函数file_get_contents()，函数中传入了变量src，从变量名来看应该是个URL的变量
+	![4.png](./img/PHPCode/taocms/4.png)
+2. 转到该函数查看源码，源码如下，发现fetchurl()函数传入了一个URL链接，然后将URL链接传入了parse_url()函数进行解析，接着对URL链接进行数组化操作后传入了fsockopen()函数，通过fsockopen()函数与URL链接地址进行socks连接并返回连接结果，中间没有看到对URL链接存在过滤，那么这里的URL链接就可以被用户所控制，从而导致SSRF漏洞
+	```PHP
+	function fetchurl($src){
+		$content='';
+		if(RUNONSAE){
+			$scurl = new SaeFetchurl();
+			$content = $scurl->fetch($src);
+		}elseif (function_exists('curl_init')){
+			$ch = curl_init(); 
+			curl_setopt($ch,CURLOPT_URL,$src); 
+			curl_setopt($ch,CURLOPT_HEADER,0); 
+			curl_setopt($ch,CURLOPT_RETURNTRANSFER,1); 
+			$content = curl_exec($ch);
+			curl_close($ch);
+		}elseif((boolean)ini_get('allow_url_fopen')){
+			$content = file_get_contents($src);
+		}else{
+			$src=parse_url($src);
+			$host=$src['host'];
+			$path=$src['path'];
+			$line='';
+			if (($s = @fsockopen($host,80,$errno,$errstr,5))===false)
+			{
+				return false;
+			}
+			fwrite($s,
+				'GET '.$path." HTTP/1.0\r\n"
+				.'Host: '.$host."\r\n"
+				."User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:2.0b13pre) Gecko/20110307 Firefox/4.0b13pre\r\n"
+				."Accept: text/xml,application/xml,application/xhtml+xml,text/html,text/plain,image/png,image/jpeg,image/gif,*/*\r\n"
+				."\r\n"
+			);
+			while (!feof($s))
+			{
+				$content.=fgets($s,4096);
+			}
+			fclose($s);
+		}
+		if ($content)
+		{
+			return $content;
+		}
+	}
+	```
+3. 查看该函数的调用情况，发现该漏洞函数存在三处引用，其中第二处为函数定义部分，另外还被/include/Model/Cms.php和/include/Model/Spider.php两个文件调用了
+	![5.png](./img/PHPCode/taocms/5.png)
+4. 先查看/include/Model/Cms.php的第一处调用，源码如下，从函数和代码来看应该是一处图片上传的保存功能，函数中对图片的URL进行了过滤，且只抓取非本站的URL，那么这里无法利用
+	```PHP
+	function saveremotepic( $content )
+	{
+		preg_match_all("/<img(.*) src=\"([^\"]+)\"[^>]+>/isU", $content,$matches);
+		$spider=new Spider(null, null);
+		foreach( $matches[2] as $picurl ){
+			$fileinfo=pathinfo($picurl);
+			$extension=$fileinfo['extension'];
+			//不是图片跳过
+			if( !in_array( $extension , array('png','jpg','gif','jpeg'))){
+				continue;
+			}
+			//http打头，且域名与当前网站不一样，则抓取
+			if( strpos($fileinfo['dirname'] ,'http')!==false && $fileinfo['dirname'] != substr(WEBURL,0,-1)){
+				$picsrc=$spider->fetchurl( $picurl);
+				
+				$attach_dir='pictures/month_'.date('ym').'/';
+				$filename=date("YmdHis").rand(1000,9999).'.'.$extension;
+				$upload=new Upload(null);
+				$upfile=$upload->saveFile($picurl, $filename, $attach_dir,WEBURL,$picsrc);
+	
+				$content=str_replace($picurl, $upfile['msg'], $content );
+			}
+	
+		}
+		
+		return $content;
+	}
+	```
+5. 查看/include/Model/Spider.php的第二处调用，如下，发现是一处文章采集的功能点，通过GET请求的方式传入参数，函数中调用了createpreg()函数进行正则的自定义，然后对采集文章的标题、内容进行匹配是否符合自定义的正则，但也没有对URL进行过滤，基本上可以确定这个功能点存在SSRF漏洞了
+	![6.png](./img/PHPCode/taocms/6.png)
+	![7.png](./img/PHPCode/taocms/7.png)
+6. 到网站后台查看一下该功能点，如下，发现采集的正则是可以自定义进行修改的，那么直接将正则修改为`(.*)`就好，这样就可以避免正则的影响了
+	![8.png](./img/PHPCode/taocms/8.png)
+7. 抓包测试，尝试读取网站根目录下的config.php文件，如下
+	![9.png](./img/PHPCode/taocms/9.png)
