@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5x06代码审计——PHP审计之SSRF.md",
+                "file": "2x10漏洞复现——Weblogic远程代码执行漏洞(CVE-2023-21839).md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5x06代码审计——PHP审计之SSRF.md",
+                "file": "2x10漏洞复现——Weblogic远程代码执行漏洞(CVE-2023-21839).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5x06代码审计——PHP审计之SSRF.md",
+                "file": "2x10漏洞复现——Weblogic远程代码执行漏洞(CVE-2023-21839).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5x06代码审计——PHP审计之SSRF.md"
+                "file": "2x10漏洞复现——Weblogic远程代码执行漏洞(CVE-2023-21839).md"
               }
             }
           }
@@ -181,8 +181,15 @@
   },
   "active": "c536c3cfc95bcfec",
   "lastOpenFiles": [
-    "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md",
+    "img/weblogic/CVE-2023-21839/3.png",
+    "img/weblogic/CVE-2023-21839/2.png",
+    "img/weblogic/CVE-2023-21839/1.png",
+    "img/weblogic/CVE-2023-21839",
+    "img/weblogic/新建文件夹",
+    "img/weblogic",
+    "img/新建文件夹",
     "5x06代码审计——PHP审计之SSRF.md",
+    "5x02代码审计——PHP审计之文件包含、删除、下载、读取、写入.md",
     "README.md",
     "img/PHPCode/taocms/9.png",
     "img/PHPCode/taocms/7.png",
@@ -192,14 +199,12 @@
     "img/PHPCode/taocms/4.png",
     "img/PHPCode/taocms/3.png",
     "img/PHPCode/taocms/2.png",
-    "img/PHPCode/taocms/1.png",
     "img/PHPCode/taocms",
     "img/PHPCode/新建文件夹",
     "5x05代码审计——PHP审计之代码执行与命令执行.md",
     "5x01代码审计——PHP审计之SQL注入.md",
     "5x04代码审计——PHP审计之YCCMS审计.md",
     "5x03代码审计——PHP审计之thinkphp反序列化文件删除.md",
-    "img/PHPCode/baijiacms/9.png",
     "img/PHPCode/baijiacms",
     "1x27漏洞原理——不安全的反序列化.md",
     "img/deserialization",
@@ -207,9 +212,6 @@
     "1x21漏洞原理——XML外部实体注入（XXE）.md",
     "img/file_path_traversal",
     "img/SSTI",
-    "img/RCE",
-    "img/JWT",
-    "img/HTTP_request_smuggling",
     "1x25漏洞原理——SSTI服务器端模板注入.md",
     "1x24漏洞原理——JWT注入.md",
     "1x23漏洞原理——目录遍历.md",
@@ -222,7 +224,6 @@
     "1x14漏洞原理——SSRF服务器端请求伪造.md",
     "1x16漏洞原理——弱口令.md",
     "1x17漏洞原理——条件竞争（并发）.md",
-    "img/XXE",
     "1x10漏洞原理——文件上传之MIME绕过.md",
     "1x08漏洞原理——XSS跨站脚本攻击之存储型XSS.md",
     "7x06漏洞挖掘——越权.md"
