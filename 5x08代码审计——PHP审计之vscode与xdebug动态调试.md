@@ -25,7 +25,7 @@
 	![7.png](./img/PHPCode/xdebug/7.png)
 6. 在 launch.json中修改监听端口为9001，与phpstudy和php.ini中保持一致，如下，左侧的运行和调试中选择Listen for Xdebug
 	![8.png](./img/PHPCode/xdebug/8.png)
-7. php调试环境配置完成，测试是否可以监听调试，打开dscms源码app/home/controller/，创建一个新文件Test.php，添加如下代码，然后在public function index()这一行断点，然后按F5刷新即进入调试监听界面
+7. php调试环境配置完成，测试是否可以监听调试，打开dscms源码app/home/controller/，创建一个新文件Test.php，添加如下代码，然后在class Test extends BaseController这一行断点，然后按F5刷新即进入调试监听界面
 	```PHP
 	<?php
 	namespace app\home\controller;
