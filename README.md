@@ -65,6 +65,8 @@
 		- [5x04代码审计——PHP审计之YCCMS审计](5x04代码审计——PHP审计之YCCMS审计.md)
 		- [5x05代码审计——PHP审计之代码执行与命令执行](5x05代码审计——PHP审计之代码执行与命令执行.md)
 		- [5x06代码审计——PHP审计之SSRF](5x06代码审计——PHP审计之SSRF.md)
+		- [5x07代码审计——PHP审计之ThinkPHP基础](5x07代码审计——PHP审计之ThinkPHP基础.md)
+		- [5x08代码审计——PHP审计之vscode与xdebug动态调试](5x08代码审计——PHP审计之vscode与xdebug动态调试.md)
    - 脚本工具开发
 		- [6x01脚本工具——主机发现与端口扫描](6x01脚本工具——主机发现与端口扫描.md)
 		- [6x02脚本工具——netcat工具](6x02脚本工具——netcat工具.md)
